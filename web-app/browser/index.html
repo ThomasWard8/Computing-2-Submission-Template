@@ -6,4 +6,36 @@
 <title>Your Web-app Title</title> <!-- All pages need a title, this will be displayed in the browser's title bar -->
 <link rel="stylesheet" href="default.css"> <!-- Import style sheet – default.css -->
 <link rel="icon" href="./assets/favicon.png"> <!-- Import 'Favorites Icon' – favicon.png -->
+<link rel="preload" href="./assets/Backgammon_White_Counter.png" as="image">
+<link rel="preload" href="./assets/Backgammon_Black_Counter.png" as="image">
+<link rel="preload" href="./assets/Backgammon_Board.png" as="image">
+
 <script type="module" src="main.js"></script> <!-- Load the main script. Must be type="module". Have only one of these -->
+
+<header>
+    <a id="title">Backgammon</a>
+    <a href="/docs/" id="api">API Documentation</a>
+</header>
+
+
+<aside>
+  <div class="container">
+    <div class="dice-wrapper">
+        <img  id="die-1">
+        <img  id="die-2">
+    </div>
+    <p id="total"></p>
+    <button id ="button"> ROLL THE DICE</button>
+    <div id = "comments" class="comments"></div>
+</div>
+</aside>
+
+<main>
+    <div id="grid" class="grid">
+    </div>
+    <div id="five" class="five">
+    </div>
+</main>
+
+<footer id="footer">
+</footer>
